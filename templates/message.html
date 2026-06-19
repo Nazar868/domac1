@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <img src="/static/logo.png" alt="logo" class="logo">
+    <h1>Send Message</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/message">Message</a>
+    <a href="/read">Read Messages</a>
+</nav>
+
+<main>
+
+    <form method="POST" action="/message">
+        <label>Username:</label>
+        <input type="text" name="username" required>
+
+        <label>Message:</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+</main>
+
+</body>
+</html>
